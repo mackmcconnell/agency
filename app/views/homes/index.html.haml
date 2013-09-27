@@ -1,0 +1,581 @@
+/ START PAGE
+#page
+  / START HEADER
+  %header#header.smooth
+    .row
+      .col-xs-12
+        #intro.text-container
+          #logo
+            = image_tag 'logo.png'
+          %h1 We are a web factory.
+          %h2 Made in Paris, France
+          #explore
+            %a.scroll{href: "#team"}
+              %i.icon-angle-down.icon-4x
+  /
+    <div class="container row">
+    <div class="col-xs-3 col-sm-3 col-md-3 member">
+    <h1>We are a</h1>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 member">
+    <ul class="vertical-ticker">
+    <li>Web</li>
+    <li>Design</li>
+    <li>Fun</li>
+    <li>Yes</li>
+    </ul>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 member">
+    <h1>Factory</h1>
+    </div>
+    </div>
+  / END HEADER
+  / START TOP-BAR
+  #top-bar
+    .container
+      .row
+        .col-md-4
+          #logo-lettering
+            %a.scroll{href: "#header"}= image_tag 'logo_lettering.svg'
+          /
+            the hidden classes of the official release are no accumlative. that's why we used the @TurchenkoAlex ones.
+            https://github.com/TurchenkoAlex/bootstrap/tree/3.0.0-wip/dist/css
+          #menu-mobile.hidden-md.hidden-lg
+            %i.icon-reorder.icon-2x
+        .col-md-8
+          %nav#top-navigation
+            %ul.list-inline
+              %li
+                %a{href: "#team"} team
+              %li
+                %a{href: "#studio"} studio
+              %li
+                %a{href: "#services"} services
+              %li
+                %a{href: "#works"} work
+              %li
+                %a{href: "#feed"} social
+              %li
+                %a{href: "#contacts"} contacts
+  / END TOP-BAR
+  / START WHAT WE'RE ALL ABOUT SECTION
+  %section#about
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3.intro
+        %h1 What we're all about.
+        / %p The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.
+    .container.row
+      .col-xs-5.col-sm-5.col-md-5.member.align-left.jusify
+        %h2= "Objective-Oriented Design"
+        %p= "Far too often, design gets pegged as something 'to make it look better'."
+        %br
+        %p= "At Sassafras, it's a bit bigger than that. All the work we do begins with a human conversation. This is how we understand not just what are clients are looking to have, but what they are looking to accomplish."
+      .col-xs-1.col-sm-1.col-md-offset-1
+      .col-xs-5.col-sm-5.col-md-5.member.align-left.jusify
+        %h2= "Durability"
+        %p= "Good work withstands the test of time." 
+        %br
+        %p= "Long after we work with a client, we need to make sure that their project will live on. Whether it's or someone else who contines to maintain your project, we make sure that the foundations are laid in an effective and maintainable way to allow anyone to take the torch and run with it."
+    /
+      <div class="container row">
+      <div class="col-xs-6 col-sm-6 col-md-3 member">
+      <div class="member-photo">
+      <div class="image">
+      <haml_loud> image_tag 'team/mack.png' </haml_loud>
+      </div>
+      <div class="image-hover">
+      <haml_loud> image_tag 'team/mack.png' </haml_loud>
+      </div>
+      <div class="member-hover hidden-xs hidden-sm">
+      <div class="list-container">
+      <ul class="list-inline social">
+      <li><a><i class="icon-facebook icon-3x"></i></a></li>
+      <li><a><i class="icon-twitter icon-3x"></i></a></li>
+      <li><a><i class="icon-linkedin icon-3x"></i></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      <h5>Renato Leão</h5>
+      <p class>Creative Director</p>
+      
+      <div class="list-container visible-xs visible-sm">
+      <ul class="list-inline">
+      <li><a><i class="icon-facebook icon-2x"></i></a></li>
+      <li><a><i class="icon-twitter icon-2x"></i></a></li>
+      <li><a><i class="icon-envelope icon-2x"></i></a></li>
+      </ul>
+      </div>
+      </div>
+      
+      <div class="col-xs-6 col-sm-6 col-md-3 member">
+      <div class="member-photo">
+      <div class="image">
+      <img src="http://placehold.it/768x960/F4594E/1a1a1a&text=768x960" alt="Team Member 3">
+      </div>
+      <div class="image-hover">
+      <img src="http://placehold.it/768x960/1a1a1a/F4594E&text=Cotton" alt="Team Member 3">
+      </div>
+      <div class="member-hover hidden-xs hidden-sm">
+      <div class="list-container">
+      <ul class="list-inline social">
+      <li><a><i class="icon-facebook icon-3x"></i></a></li>
+      <li><a><i class="icon-twitter icon-3x"></i></a></li>
+      <li><a><i class="icon-linkedin icon-3x"></i></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      <h5>Sara Baião</h5>
+      <p>Junior Designer</p>
+      <div class="list-container visible-xs visible-sm">
+      <ul class="list-inline">
+      <li><a><i class="icon-facebook icon-2x"></i></a></li>
+      <li><a><i class="icon-twitter icon-2x"></i></a></li>
+      <li><a><i class="icon-linkedin icon-2x"></i></a></li>
+      
+      </ul>
+      </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3 member">
+      <div class="member-photo">
+      <div class="image">
+      <img src="http://placehold.it/768x960/F4594E/1a1a1a&text=768x960" alt="Team Member 2">
+      </div>
+      <div class="image-hover">
+      <img src="http://placehold.it/768x960/1a1a1a/F4594E&text=Cotton" alt="Team Member 2">
+      </div>
+      <div class="member-hover hidden-xs hidden-sm">
+      <div class="list-container">
+      <ul class="list-inline social">
+      <li><a><i class="icon-facebook icon-3x"></i></a></li>
+      <li><a><i class="icon-twitter icon-3x"></i></a></li>
+      <li><a><i class="icon-linkedin icon-3x"></i></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      <h5>João Saraiva</h5>
+      <p>Lead Developer</p>
+      <div class="list-container visible-xs visible-sm">
+      <ul class="list-inline">
+      <li><a><i class="icon-facebook icon-2x"></i></a></li>
+      <li><a><i class="icon-twitter icon-2x"></i></a></li>
+      <li><a><i class="icon-linkedin icon-2x"></i></a></li>
+      </ul>
+      </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3 member">
+      <div class="member-photo">
+      <haml_loud> image_tag 'team/you.jpg' </haml_loud>
+      <div class="member-hover hidden-xs hidden-sm">
+      <div class="list-container">
+      <ul class="list-inline social">
+      <li><a href="#contacts" class="mail scroll"><i class="icon-envelope icon-3x"></i></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      <h5>We're Hiring!</h5>
+      <p>This can be you!</p>
+      <div class="list-container visible-xs visible-sm">
+      <ul class="list-inline">
+      <li><a href="#contacts" class="mail scroll"><i class="icon-envelope icon-2x"></i></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+  / END WHAT WE'RE ALL ABOUT SECTION
+  / START SERVICES SECTION
+  %section#services
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3.intro
+        %h1 Our Services
+        %p Everything we do has it's base in performance, User Experience design to make it easy, coding / development for speed and SEO / on-page optimization for boosting lead generation.
+    #services-list.container.row
+      .col-xs-3.col-sm-6.col-md-3
+        #web.service.smooth
+          = image_tag "services/web.svg"
+          %h5.hidden-xs Web Development
+          / %p.hidden-xs We specialize in interactive web applications that are user-focused and full love.
+      .col-xs-3.col-sm-6.col-md-3
+        #branding.service.smooth
+          = image_tag 'services/branding.svg'
+          %h5.hidden-xs Performance & Optimization
+          / %p.hidden-xs 
+      .col-xs-3.col-sm-6.col-md-3
+        #illustration.service.smooth
+          = image_tag 'services/illustration.svg'
+          %h5.hidden-xs Design
+          / %p.hidden-xs A cohesive image 
+      .col-xs-3.col-sm-6.col-md-3
+        #video.service.smooth
+          = image_tag 'services/video.svg'
+          %h5.hidden-xs Content Marketing
+          / %p.hidden-xs We'll make sure folks understand what they need to understand. Information
+    .container
+      .row
+        .col-xs-12.col-sm-12.col-md-12.col-lg-12
+          %ul#branding-skills.skills-bar
+            %li
+              %span.expand{"data-width" => "70%"}
+              %em Mixpanel
+            %li
+              %span.expand{"data-width" => "50%"}
+              %em Google Adwords
+          %ul#web-skills.skills-bar
+            %li
+              %span.expand{"data-width" => "70%"}
+              %em Ruby on Rails
+            %li
+              %span.expand{"data-width" => "40%"}
+              %em Javascript
+            %li
+              %span.expand{"data-width" => "30%"}
+              %em Angular
+          %ul#illustration-skills.skills-bar
+            %li
+              %span.expand{"data-width" => "75%"}
+              %em Sketch          
+            %li
+              %span.expand{"data-width" => "50%"}
+              %em Illustrator
+          %ul#video-skills.skills-bar
+            %li
+              %span.expand{"data-width" => "80%"}
+              %em Customer Research
+            %li
+              %span.expand{"data-width" => "40%"}
+              %em More Customer Research
+            %li
+              %span.expand{"data-width" => "30%"}
+              %em Even More Customer Research
+  / END SERVICES SECTION
+  / START TEAM SECTION
+  %section#team
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3.intro
+        %h1 Meet our team.
+        %p The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.
+    .container.row
+      .col-xs-6.col-sm-6.col-md-3.member
+        .member-photo
+          .image
+            = image_tag 'team/mack.png'
+          .image-hover
+            = image_tag 'team/mack.png'
+          .member-hover.hidden-xs.hidden-sm
+            .list-container
+              %ul.list-inline.social
+                %li
+                  %a
+                    %i.icon-facebook.icon-3x
+                %li
+                  %a
+                    %i.icon-twitter.icon-3x
+                %li
+                  %a
+                    %i.icon-linkedin.icon-3x
+        %h5 Renato Leão
+        %p Creative Director
+        .list-container.visible-xs.visible-sm
+          %ul.list-inline
+            %li
+              %a
+                %i.icon-facebook.icon-2x
+            %li
+              %a
+                %i.icon-twitter.icon-2x
+            %li
+              %a
+                %i.icon-envelope.icon-2x
+      .col-xs-6.col-sm-6.col-md-3.member
+        .member-photo
+          .image
+            %img{alt: "Team Member 3", src: "http://placehold.it/768x960/F4594E/1a1a1a&text=768x960"}/
+          .image-hover
+            %img{alt: "Team Member 3", src: "http://placehold.it/768x960/1a1a1a/F4594E&text=Cotton"}/
+          .member-hover.hidden-xs.hidden-sm
+            .list-container
+              %ul.list-inline.social
+                %li
+                  %a
+                    %i.icon-facebook.icon-3x
+                %li
+                  %a
+                    %i.icon-twitter.icon-3x
+                %li
+                  %a
+                    %i.icon-linkedin.icon-3x
+        %h5 Sara Baião
+        %p Junior Designer
+        .list-container.visible-xs.visible-sm
+          %ul.list-inline
+            %li
+              %a
+                %i.icon-facebook.icon-2x
+            %li
+              %a
+                %i.icon-twitter.icon-2x
+            %li
+              %a
+                %i.icon-linkedin.icon-2x
+      .col-xs-6.col-sm-6.col-md-3.member
+        .member-photo
+          .image
+            %img{alt: "Team Member 2", src: "http://placehold.it/768x960/F4594E/1a1a1a&text=768x960"}/
+          .image-hover
+            %img{alt: "Team Member 2", src: "http://placehold.it/768x960/1a1a1a/F4594E&text=Cotton"}/
+          .member-hover.hidden-xs.hidden-sm
+            .list-container
+              %ul.list-inline.social
+                %li
+                  %a
+                    %i.icon-facebook.icon-3x
+                %li
+                  %a
+                    %i.icon-twitter.icon-3x
+                %li
+                  %a
+                    %i.icon-linkedin.icon-3x
+        %h5 João Saraiva
+        %p Lead Developer
+        .list-container.visible-xs.visible-sm
+          %ul.list-inline
+            %li
+              %a
+                %i.icon-facebook.icon-2x
+            %li
+              %a
+                %i.icon-twitter.icon-2x
+            %li
+              %a
+                %i.icon-linkedin.icon-2x
+      .col-xs-6.col-sm-6.col-md-3.member
+        .member-photo
+          = image_tag 'team/you.jpg'
+          .member-hover.hidden-xs.hidden-sm
+            .list-container
+              %ul.list-inline.social
+                %li
+                  %a.mail.scroll{href: "#contacts"}
+                    %i.icon-envelope.icon-3x
+        %h5 We're Hiring!
+        %p This can be you!
+        .list-container.visible-xs.visible-sm
+          %ul.list-inline
+            %li
+              %a.mail.scroll{href: "#contacts"}
+                %i.icon-envelope.icon-2x
+  / END TEAM SECTION
+  / START STUDIO SECTION
+  %section#studio
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3.intro
+        %h1 Our Workplace.
+        %p Messy, dusty, oldy, whatever. We love it anyway. Our workplace is our second home, and there's nothing like home!
+    .studio
+      .row
+        .col-xs-12
+          #swiper.swiper-container
+            .swiper-wrapper
+              .swiper-slide
+                %img{alt: "slider image 1", src: "http://placehold.it/960x540/F4594E/1a1a1a&text=960x540"}/
+              .swiper-slide
+                %img{alt: "slider image 2", src: "http://placehold.it/960x540//1a1a1a/F4594E&text=Best+with+aspect+ratio+16:9"}/
+              .swiper-slide
+                %img{alt: "slider image 3", src: "http://placehold.it/960x540/F4594E/1a1a1a&text=960x540"}/
+              .swiper-slide
+                %img{alt: "slider image 4", src: "http://placehold.it/960x540//1a1a1a/F4594E&text=Best+with+aspect+ratio+16:9"}/
+              .swiper-slide
+                %img{alt: "slider image 5", src: "http://placehold.it/960x540/F4594E/1a1a1a&text=960x540"}/
+              .swiper-slide
+                %img{alt: "slider image 6", src: "http://placehold.it/960x540//1a1a1a/F4594E&text=Best+with+aspect+ratio+16:9"}/
+  / END STUDIO SECTION
+  / START WORKS SECTION
+  %section#works
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3.intro
+        %h1 Our Work
+        %p Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children.
+    #w-filter.row
+      .col-xs-12
+        #work-filter.center-list
+          %ul.list-inline.hidden-xs
+            %li.filter.active{"data-filter" => "all"} all
+            %li.filter{"data-filter" => "branding"} branding
+            %li.filter{"data-filter" => "photography"} photography
+            %li.filter{"data-filter" => "illustration"} illustration
+            %li.filter{"data-filter" => "video"} video
+    #work-container.container.row
+      .col-xs-12.col-sm-4.mix.all.branding
+        #work-1.work
+          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
+          .work-info
+            %h6 Sample Caption 1
+      .col-xs-12.col-sm-4.mix.all.branding
+        #work-2.work
+          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=aspect+ratio+4:3"}/
+          .work-info
+            %h6 Sample Caption 2
+      .col-xs-12.col-sm-4.end.mix.all.branding
+        #work-3.work
+          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
+          .work-info
+            %h6 Sample Caption 3
+      .col-xs-12.col-sm-4.mix.all.branding
+        #work-4.work
+          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=aspect+ratio+4:3"}/
+          .work-info
+            %h6 Sample Caption 4
+      .col-xs-12.col-sm-4.mix.all.illustration
+        #work-5.work
+          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
+          .work-info
+            %h6 Sample Caption 5
+      .col-xs-12.col-sm-4.mix.all.photography
+        #work-6.work
+          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=aspect+ratio+4:3"}/
+          .work-info
+            %h6 Sample Caption 6
+      .col-xs-12.col-sm-4.end.mix.all.video
+        #work-7.work
+          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
+          .work-info
+            %h6 Sample Caption 7
+      .col-xs-12.col-sm-4.mix.all.video
+        #work-8.work
+          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=aspect+ratio+4:3"}/
+          .work-info
+            %h6 Sample Caption 8
+      .col-xs-12.col-sm-4.mix.all.video
+        #work-9.work
+          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
+          .work-info
+            %h6 Sample Caption 9
+  / END WORKS SECTION
+  / START SOCIAL SECTION
+  %section#feed
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3.intro
+        %h2 Social feeder.
+        %p We're in more than one place at a time.
+    .row
+      .col-xs-12.col-sm-12
+        %ul#social-feed.centerUl
+          %li#flickr-feed.active
+            %a
+              %i.icon-flickr.icon-4x
+          %li#instagram-feed
+            %a
+              %i.icon-instagram.icon-4x
+          %li#twitter-feed
+            %a
+              %i.icon-twitter.icon-4x
+    / START FLICKR FEED
+    #flickr.row.feed
+    / END TWITTER FEED
+    / START INSTAGRAM FEED
+    #instagram.row.feed
+    / END INSTAGRAM FEED
+    / START TWITTER FEED
+    #twitter.row.feed
+    / END TWITTER FEED
+  / END SOCIAL SECTION
+  / START CONTACTS SECTION
+  %section#contacts
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3.intro
+        %h1 Contact us
+        %p And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers.
+    .row
+      .col-xs-12.col-sm-8.col-sm-offset-2
+        %form#contact-form{action: "/", method: "post"}
+          .row
+            .col-xs-12.formContainer
+              %input#name.requiredField{name: "name", placeholder: "Name", type: "text", value: ""}/
+            .col-xs-12.formContainer
+              %input#email.requiredField.email{name: "email", placeholder: "Email", type: "text", value: ""}/
+            .col-xs-12.formContainer
+              %textarea#message.requiredField{cols: "30", name: "message", placeholder: "Briefing", rows: "20"}
+            .col-xs-12.formContainer
+              %input#submitted.button{name: "submitted", type: "hidden", value: "SEND"}/
+              %button#submit.btn{type: "submit"} SEND
+            .col-xs-12.formContainer
+              %p#error.alert{"data-alert" => ""} Please fill in all data correctly.
+              %p#thanks.alert.alert-success{"data-alert" => ""} Thanks. We'll get back to you as soon as possible.
+              %p#timedout.alert{"data-alert" => ""} The connection to the server timed out.
+              %p#state.alert{"data-alert" => ""}
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3
+        .contact-info
+          .row
+            .col-sm-4.contact
+              .icon
+                %a
+                  %i.icon-envelope.icon-3x
+              %p hello@digitalcookers.com
+            .col-sm-4.contact
+              .icon
+                %a{href: "https://www.google.com/maps?daddr=Pra%C3%A7a+da+Rep%C3%BAblica,+3000-019+Coimbra,+Portugal&ie=UTF8&ll=40.20954,-8.419797&spn=0.009488,0.01929&sll=40.22875989954939,-8.416598004503014&sspn=0.1779943086948243,0.43959398257471627&t=m&dg=opt&z=16&iwloc=ddw1", targe: "_blank"}
+                  %i.icon-map-marker.icon-3x
+              %p
+                Street cookers
+                %br>/
+                0000-000
+                %br>/
+                Somewhere
+            .col-sm-4.contact
+              .icon
+                %a
+                  %i.icon-phone.icon-3x
+              %p +351 912 222 222
+  / END CONTACTS SECTION
+  / START FOOTER
+  %footer
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3
+        %hr/
+        #social-profiles
+          %ul.centerUl
+            %li
+              %a
+                %i.icon-facebook.icon-2x
+            %li
+              %a{href: "https://twitter.com/digitalcookers", target: "_blank"}
+                %i.icon-twitter.icon-2x
+            %li
+              %a
+                %i.icon-linkedin.icon-2x
+            %li
+              %a
+                %i.icon-instagram.icon-2x
+            %li
+              %a
+                %i.icon-flickr.icon-2x
+            %li
+              %a
+                %i.icon-google-plus.icon-2x
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3
+        %p#copyrights Cotton® Made by digitalcookers™. All rights reserved.
+  / END FOOTER
+/ END PAGE
+/ START PROJECT PAGE
+#project-page
+  / START PROJECT-TOP-BAR
+  #project-top-bar
+    .row
+      .col-xs-2
+        #previous-project
+        #previous-project-name
+      .col-xs-8
+        #close-project
+      .col-xs-2
+        #next-project
+        #next-project-name
+  / END PROJECT-TOP-BAR
+  / START PROJECT
+  #project
+  / END PROJECT
+/ END PROJECT PAGE
