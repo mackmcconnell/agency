@@ -45,12 +45,13 @@ jQuery(document).ready(function() {
 	jQuery(window).bind('scroll', function () {
 	
 		/* Animation for Top Navigation */
+		/* Animation for Top Navigation */
 		var scrollTop = jQuery(window).scrollTop();
 		
-		if (scrollTop > jQuery('#team').offset().top-60 && animate == 'down') {
+		if (scrollTop > jQuery('#about').offset().top-60 && animate == 'down') {
 			animate='up';
 			jQuery('#top-bar').stop().animate({top:'0'}, 300);
-		} else if(scrollTop < jQuery('#team').offset().top-60 && animate == 'up'){
+		} else if(scrollTop < jQuery('#about').offset().top-60 && animate == 'up'){
 			animate='down';
 			jQuery('#top-bar').stop().animate({top:'-75px'}, 300);
 		}
@@ -125,7 +126,7 @@ jQuery(document).ready(function() {
 	    var anchor = jQuery(this);
 	
 	    jQuery('html, body').stop().animate({
-	        scrollTop: jQuery(anchor.attr('href')).offset().top-50
+	        scrollTop: jQuery(anchor.attr('href')).offset().top-1320
 	    }, 1500,'easeInOutExpo');
 	    
 	    /* If Mobile hide menu on select */
