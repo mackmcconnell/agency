@@ -120,12 +120,13 @@ jQuery(document).ready(function() {
 	    }
 	    
 	    event.preventDefault();
-	});
-	
+		});
+
 	jQuery('.scroll').bind('click',function(event){
 	    var anchor = jQuery(this);
 	
 	    jQuery('html, body').stop().animate({
+	    	debugger;
 	        scrollTop: jQuery(anchor.attr('href')).offset().top-1420
 	    }, 1500,'easeInOutExpo');
 	    
