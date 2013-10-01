@@ -126,7 +126,7 @@ jQuery(document).ready(function() {
 	    var anchor = jQuery(this);
 	
 	    jQuery('html, body').stop().animate({
-	        scrollTop: jQuery(anchor.attr('href')).offset().top-1320
+	        scrollTop: jQuery(anchor.attr('href')).offset().top-1420
 	    }, 1500,'easeInOutExpo');
 	    
 	    /* If Mobile hide menu on select */

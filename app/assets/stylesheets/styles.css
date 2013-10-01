@@ -315,8 +315,8 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 #project-top-bar p{color: white;}
 
 #next-project{background-image: url('works/arrow-right.svg');}
-#previous-project{background-image: url('../images/works/arrow-left.svg');}
-#close-project{margin: 0 auto;background-image: url('../images/works/close-project.svg');}
+#previous-project{background-image: url('works/arrow-left.svg');}
+#close-project{margin: 0 auto;background-image: url('works/close-project.svg');}
 
 #project h2{margin-top: 0;}
 

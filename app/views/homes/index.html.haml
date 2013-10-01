@@ -36,7 +36,7 @@
       .row
         .col-md-4
           #logo-lettering
-            %a.scroll{href: "#header"}= image_tag 'logo_lettering.svg'
+            %a.scroll{href: "#header"}= image_tag 'text_logo.svg'
           /
             the hidden classes of the official release are no accumlative. that's why we used the @TurchenkoAlex ones.
             https://github.com/TurchenkoAlex/bootstrap/tree/3.0.0-wip/dist/css
@@ -46,15 +46,15 @@
           %nav#top-navigation
             %ul.list-inline
               %li
-                %a{href: "#team"} team
-              %li
-                %a{href: "#studio"} studio
+                %a{href: "#about"} about
               %li
                 %a{href: "#services"} services
               %li
-                %a{href: "#works"} work
+                %a{href: "#team"} team
               %li
-                %a{href: "#feed"} social
+                %a{href: "#works"} work
+              / %li
+              /   %a{href: "#feed"} social
               %li
                 %a{href: "#contacts"} contacts
   / END TOP-BAR
@@ -382,6 +382,68 @@
               %a.mail.scroll{href: "#contacts"}
                 %i.icon-envelope.icon-2x
   / END TEAM SECTION
+  / START WORKS SECTION
+  %section#works
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3.intro
+        %h1 Our Work
+        %p Take a look-see. Go ahead. Go on, do it.
+    / #w-filter.row
+    /   .col-xs-12
+    /     #work-filter.center-list
+    /       %ul.list-inline.hidden-xs
+    /         %li.filter.active{"data-filter" => "all"} all
+    /         %li.filter{"data-filter" => "branding"} branding
+    /         %li.filter{"data-filter" => "photography"} photography
+    /         %li.filter{"data-filter" => "illustration"} illustration
+    /         %li.filter{"data-filter" => "video"} video
+    #work-container.container.row
+      .col-xs-12.col-sm-4.mix.all.branding
+        #work-1.work
+          = image_tag 'tasters_club_preview.png'
+          .work-info
+            %h6 Taster's Club Whiskey of the Month
+      .col-xs-12.col-sm-4.mix.all.branding
+        #work-2.work
+          = image_tag 'le_wagon_preview.png'
+          .work-info
+            %h6 Le Wagon - Developer Bootcamp in Paris
+      .col-xs-12.col-sm-4.end.mix.all.branding
+        #work-3.work
+          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
+          .work-info
+            %h6 Sample Caption 3
+      / .col-xs-12.col-sm-4.mix.all.branding
+      /   #work-4.work
+      /     %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=aspect+ratio+4:3"}/
+      /     .work-info
+      /       %h6 Sample Caption 4
+      / .col-xs-12.col-sm-4.mix.all.illustration
+      /   #work-5.work
+      /     %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
+      /     .work-info
+      /       %h6 Sample Caption 5
+      / .col-xs-12.col-sm-4.mix.all.photography
+      /   #work-6.work
+      /     %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=aspect+ratio+4:3"}/
+      /     .work-info
+      /       %h6 Sample Caption 6
+      / .col-xs-12.col-sm-4.end.mix.all.video
+      /   #work-7.work
+      /     %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
+      /     .work-info
+      /       %h6 Sample Caption 7
+      / .col-xs-12.col-sm-4.mix.all.video
+      /   #work-8.work
+      /     %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=aspect+ratio+4:3"}/
+      /     .work-info
+      /       %h6 Sample Caption 8
+      / .col-xs-12.col-sm-4.mix.all.video
+      /   #work-9.work
+      /     %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
+      /     .work-info
+      /       %h6 Sample Caption 9
+  / END WORKS SECTION
   / START STUDIO SECTION
   %section#studio
     .row
@@ -406,97 +468,35 @@
               .swiper-slide
                 %img{alt: "slider image 6", src: "http://placehold.it/960x540//1a1a1a/F4594E&text=Best+with+aspect+ratio+16:9"}/
   / END STUDIO SECTION
-  / START WORKS SECTION
-  %section#works
-    .row
-      .col-xs-12.col-sm-6.col-sm-offset-3.intro
-        %h1 Our Work
-        %p Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children.
-    #w-filter.row
-      .col-xs-12
-        #work-filter.center-list
-          %ul.list-inline.hidden-xs
-            %li.filter.active{"data-filter" => "all"} all
-            %li.filter{"data-filter" => "branding"} branding
-            %li.filter{"data-filter" => "photography"} photography
-            %li.filter{"data-filter" => "illustration"} illustration
-            %li.filter{"data-filter" => "video"} video
-    #work-container.container.row
-      .col-xs-12.col-sm-4.mix.all.branding
-        #work-1.work
-          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
-          .work-info
-            %h6 Sample Caption 1
-      .col-xs-12.col-sm-4.mix.all.branding
-        #work-2.work
-          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=aspect+ratio+4:3"}/
-          .work-info
-            %h6 Sample Caption 2
-      .col-xs-12.col-sm-4.end.mix.all.branding
-        #work-3.work
-          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
-          .work-info
-            %h6 Sample Caption 3
-      .col-xs-12.col-sm-4.mix.all.branding
-        #work-4.work
-          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=aspect+ratio+4:3"}/
-          .work-info
-            %h6 Sample Caption 4
-      .col-xs-12.col-sm-4.mix.all.illustration
-        #work-5.work
-          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
-          .work-info
-            %h6 Sample Caption 5
-      .col-xs-12.col-sm-4.mix.all.photography
-        #work-6.work
-          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=aspect+ratio+4:3"}/
-          .work-info
-            %h6 Sample Caption 6
-      .col-xs-12.col-sm-4.end.mix.all.video
-        #work-7.work
-          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
-          .work-info
-            %h6 Sample Caption 7
-      .col-xs-12.col-sm-4.mix.all.video
-        #work-8.work
-          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=aspect+ratio+4:3"}/
-          .work-info
-            %h6 Sample Caption 8
-      .col-xs-12.col-sm-4.mix.all.video
-        #work-9.work
-          %img{alt: "work", src: "http://placehold.it/720x540/F4594E/1a1a1a&text=720x540"}/
-          .work-info
-            %h6 Sample Caption 9
-  / END WORKS SECTION
   / START SOCIAL SECTION
-  %section#feed
-    .row
-      .col-xs-12.col-sm-6.col-sm-offset-3.intro
-        %h2 Social feeder.
-        %p We're in more than one place at a time.
-    .row
-      .col-xs-12.col-sm-12
-        %ul#social-feed.centerUl
-          %li#flickr-feed.active
-            %a
-              %i.icon-flickr.icon-4x
-          %li#instagram-feed
-            %a
-              %i.icon-instagram.icon-4x
-          %li#twitter-feed
-            %a
-              %i.icon-twitter.icon-4x
-    / START FLICKR FEED
-    #flickr.row.feed
-    / END TWITTER FEED
-    / START INSTAGRAM FEED
-    #instagram.row.feed
-    / END INSTAGRAM FEED
-    / START TWITTER FEED
-    #twitter.row.feed
-    / END TWITTER FEED
-  / END SOCIAL SECTION
-  / START CONTACTS SECTION
+  / %section#feed
+  /   .row
+  /     .col-xs-12.col-sm-6.col-sm-offset-3.intro
+  /       %h2 Social feeder.
+  /       %p We're in more than one place at a time.
+  /   .row
+  /     .col-xs-12.col-sm-12
+  /       %ul#social-feed.centerUl
+  /         %li#flickr-feed.active
+  /           %a
+  /             %i.icon-flickr.icon-4x
+  /         %li#instagram-feed
+  /           %a
+  /             %i.icon-instagram.icon-4x
+  /         %li#twitter-feed
+  /           %a
+  /             %i.icon-twitter.icon-4x
+  /   / START FLICKR FEED
+  /   #flickr.row.feed
+  /   / END TWITTER FEED
+  /   / START INSTAGRAM FEED
+  /   #instagram.row.feed
+  /   / END INSTAGRAM FEED
+  /   / START TWITTER FEED
+  /   #twitter.row.feed
+  /   / END TWITTER FEED
+  / / END SOCIAL SECTION
+  / / START CONTACTS SECTION
   %section#contacts
     .row
       .col-xs-12.col-sm-6.col-sm-offset-3.intro
