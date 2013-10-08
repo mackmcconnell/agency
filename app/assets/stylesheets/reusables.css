@@ -6,6 +6,10 @@
   text-align: justify;
 }
 
+.distance-top-100 {
+  padding-top: 100px;
+}
+
 .distance-top-120 {
   padding-top: 120px;
 }

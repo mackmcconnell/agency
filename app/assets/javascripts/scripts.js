@@ -110,7 +110,7 @@ jQuery(document).ready(function() {
 	    jQuery(this).addClass('active');
 	
 	    jQuery('html, body').stop().animate({
-	        scrollTop: jQuery(anchor.attr('href')).offset().top-50
+	        scrollTop: jQuery(anchor.attr('href'))
 	    }, 1500,'easeInOutExpo');
 	    
 	    /* If Mobile hide menu on select */
@@ -123,12 +123,15 @@ jQuery(document).ready(function() {
 		});
 
 	jQuery('.scroll').bind('click',function(event){
+	    
 	    var anchor = jQuery(this);
-	
-	    jQuery('html, body').stop().animate({
-	    	debugger;
-	        scrollTop: jQuery(anchor.attr('href')).offset().top-1420
-	    }, 1500,'easeInOutExpo');
+
+	    // $('body').scrollTop(330);
+
+	    $('body').scrollTop(661);
+	    // jQuery('html, body').stop().animate({
+	    //     scrollTop: jQuery('#about').offset().top - 1420
+	    // }, 500,'easeInOutExpo');
 	    
 	    /* If Mobile hide menu on select */
 	    if(jQuery(window).width()<=767){	
