@@ -3,6 +3,8 @@ arrow-down.png: arrow-down-40dd77220bd0b09b5d7bce956f42549d.png
 arrow-down/index.png: arrow-down-40dd77220bd0b09b5d7bce956f42549d.png
 deep_in_the_forest.jpg: deep_in_the_forest-94e72cd4e3c7d26eba46668a07f61010.jpg
 deep_in_the_forest/index.jpg: deep_in_the_forest-94e72cd4e3c7d26eba46668a07f61010.jpg
+le_wagon_hero.png: le_wagon_hero-a79f3e43bbc012c34595ee4724279d8c.png
+le_wagon_hero/index.png: le_wagon_hero-a79f3e43bbc012c34595ee4724279d8c.png
 le_wagon_preview.png: le_wagon_preview-e9a89bdde201ae35b60c5f5522bfad86.png
 le_wagon_preview/index.png: le_wagon_preview-e9a89bdde201ae35b60c5f5522bfad86.png
 logo.png: logo-99366f28c4679c699ad0e2c84d61c1a1.png
@@ -29,6 +31,8 @@ tasters_club_hero.png: tasters_club_hero-7d94320a564af315388bcf013fee49d7.png
 tasters_club_hero/index.png: tasters_club_hero-7d94320a564af315388bcf013fee49d7.png
 tasters_club_preview.png: tasters_club_preview-aa0cd6ed74bc082dd549ccea68583c83.png
 tasters_club_preview/index.png: tasters_club_preview-aa0cd6ed74bc082dd549ccea68583c83.png
+team/boris.png: team/boris-137c5cfd67b94a03b00707f1434a255d.png
+team/boris/index.png: team/boris-137c5cfd67b94a03b00707f1434a255d.png
 team/mack.png: team/mack-45268d611f29e484c4c0178e0ebbf8b0.png
 team/mack/index.png: team/mack-45268d611f29e484c4c0178e0ebbf8b0.png
 team/you.jpg: team/you-70f5ec58d6b0c5b8eba7f0cf6af5a161.jpg
@@ -49,10 +53,10 @@ works/close-project.svg: works/close-project-b03038838b6158746267f943fb032a7b.sv
 works/close-project/index.svg: works/close-project-b03038838b6158746267f943fb032a7b.svg
 works/close-project2.svg: works/close-project2-e52eea586ea2d19f206a1b6a978ccf63.svg
 works/close-project2/index.svg: works/close-project2-e52eea586ea2d19f206a1b6a978ccf63.svg
-application.js: application-932cb22b5448035dad36007202ac6ec5.js
-application/index.js: application-932cb22b5448035dad36007202ac6ec5.js
-application.css: application-a1d5678c07592c7b8c082ba758bfe6c4.css
-application/index.css: application-a1d5678c07592c7b8c082ba758bfe6c4.css
+application.js: application-f7317498e3301442a6f4477e65d95e11.js
+application/index.js: application-f7317498e3301442a6f4477e65d95e11.js
+application.css: application-6b28859159bd80e35bdc32cc90b45b66.css
+application/index.css: application-6b28859159bd80e35bdc32cc90b45b66.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 fontawesome-webfont.eot: fontawesome-webfont-009f6d1f667cc42c25e712ab3429cbc7.eot
